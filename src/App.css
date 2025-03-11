@@ -1,0 +1,109 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Task Inputs */
+.task-input {
+  width: 80%; /* Set width for the inputs */
+  padding: 10px;
+  margin: 10px auto; /* Center the inputs horizontally */
+  display: block; /* Make inputs block elements */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button */
+button {
+  width: 80%; /* Set width for the button */
+  padding: 10px;
+  margin: 10px auto; /* Center the button horizontally */
+  display: block; /* Make button a block element */
+  font-size: 16px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Make sure button changes color on hover */
+button:hover {
+  background-color: #4fa3e5;
+}
+
+/* Default Light Theme */
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.light-theme .task-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.light-theme button {
+  background-color: #61dafb;
+  color: white;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: #282c34;
+  color: white;
+}
+
+.dark-theme .task-input {
+  background-color: #444;
+  border: 1px solid #888;
+}
+
+.dark-theme button {
+  background-color: #4fa3e5;
+  color: white;
+}
+
+/* Styling for Tasks in Task List */
+li {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4; /* Default background for incomplete tasks */
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for completed tasks */
+li.completed {
+  background-color: #c8e6c9; /* Light green shade for completed tasks */
+}
+
+/* Styling for incomplete tasks */
+li.incomplete {
+  background-color: #e3f2fd; /* Light blue shade for incomplete tasks */
+}
+
+li button {
+  background-color: #ff6347;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #e53e3e; /* Darker red for delete button hover */
+}
